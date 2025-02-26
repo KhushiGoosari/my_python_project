@@ -5,4 +5,4 @@ WORKDIR /app
 COPY dist/*.whl .
 RUN pip install *.whl
 
-CMD ["myapp"]
+CMD ["python", "test_main.py"]
